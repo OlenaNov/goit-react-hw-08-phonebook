@@ -1,22 +1,20 @@
-import { deleteContactThunk } from "redux/operations";
-import { DeleteItem, Name, Number } from "./Contact.styled";
-import { useDispatch, useSelector } from 'react-redux';
-import { selectIsLoading } from "redux/selectors";
+import { Item, Button } from './Contact.styled'
+import { RotatingLines } from 'react-loader-spinner';
+import { useDeleteContactMutation } from 'redux/contacts/contactsApi';
 
-const Contact = ({ contact: { name, phone, id } }) => {
-    const dispatch = useDispatch();
-    const isLoading = useSelector(selectIsLoading);
-
+function ContactItem({ id, name, number}) {const [deleteContact, { isLoading: isDeleting }] = useDeleteContactMutation();
+  
     return (
-        <>
-            <div>
-                <Name>{name}</Name>
-                <Number>{phone}</Number>
-            </div>
-            <DeleteItem type="button" onClick={() => dispatch(deleteContactThunk(id))}>x</DeleteItem>
-            {isLoading && <div>Loading...</div>  }
-        </>
-    )
+        <Item key={id}>
+            <p>
+                {name}: {number} {' '}
+            </p>
+            <Button type="button" onClick={() => deleteContact(id)}
+        disabled={isDeleting}>
+               {isDeleting && <RotatingLines width="10" />}  Delete
+            </Button>
+        </Item>
+    );
 };
 
-export default Contact;
+export default ContactItem;

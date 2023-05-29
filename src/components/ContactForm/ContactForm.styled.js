@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
@@ -33,4 +32,15 @@ export const SubmitContact = styled.button`
     background-color: #fef6dd;
     border: 2px solid lightblue;
     border-radius: 4px;
+`;
+
+export const Button = styled.button`
+  width: 100px;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #757575;
 `;
