@@ -2,8 +2,7 @@ import styled from '@emotion/styled';
 
 export const PageLoginSection = styled.section`
   display: block;
-  min-width: 420px;
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 20px;
 
@@ -19,12 +18,14 @@ export const PageLoginTitle = styled.h1`
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
+  color: #7d3cff;
 `;
 
 export const PageHomeLabel = styled.label`
   display: flex;
   flex-direction: column;
   font-size: 16px;
+  color: #7d3cff;
 `;
 
 export const PageHomeInput = styled.input`
@@ -34,7 +35,8 @@ export const PageHomeInput = styled.input`
   display: inline-block;
   box-sizing: border-box;
   transition: background-color 0.5s ease-in-out;
-
+  border: 2px solid lightblue;
+  background-color: #f0f8ff;
   border-radius: 20px;
   cursor: pointer;
   font-size: 15px;
@@ -48,9 +50,10 @@ export const PageHomeBtn = styled.button`
   height: 100%;
   padding: 5px;
   border-radius: 20px;
-  color: #ffffff;
+  border: 2px solid lightblue;
+  color: #7d3cff;
   cursor: pointer;
   font-size: 15px;
 
-  background-color: #858181;
+  background-color: #f0f8ff;
 `;

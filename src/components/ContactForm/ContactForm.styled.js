@@ -8,7 +8,7 @@ export const Form = styled.form`
     width: 400px;
     padding: 60px;
 
-    background-color: #b5e9e9;
+    background-color: #f0f8ff;
     border: 2px solid lightblue;
     border-radius: 4px;
 `;
@@ -16,6 +16,7 @@ export const Form = styled.form`
 export const Label = styled.label`
     display: flex;
     justify-content: space-between;
+    color: #7d3cff;
 `;
 
 export const Input = styled.input`
@@ -23,7 +24,9 @@ export const Input = styled.input`
     margin-left: 20px;
 
     border: 2px solid lightblue;
+    background-color: #f0f8ff;
     border-radius: 4px;
+    color: #7d3cff;
 `;
 
 export const SubmitContact = styled.button`
@@ -32,6 +35,7 @@ export const SubmitContact = styled.button`
     background-color: #fef6dd;
     border: 2px solid lightblue;
     border-radius: 4px;
+    color: #7d3cff;
 `;
 
 export const Button = styled.button`
@@ -39,8 +43,9 @@ export const Button = styled.button`
   height: 100%;
   padding: 5px;
   border-radius: 5px;
-  color: #000000;
+  border: 2px solid lightblue;
+  color: #7d3cff;
   cursor: pointer;
   font-size: 15px;
-  background-color: #757575;
+  background-color: #f0f8ff;
 `;

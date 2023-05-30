@@ -7,12 +7,11 @@ function PageHome() {
   return (
     <>
       <PageHomeSection>
-            <PageHomeTitle>Welcome to the phonebook</PageHomeTitle>
-        <PageHomeTitle2>Now you will exactly not forget your contacts!</PageHomeTitle2>
+            <PageHomeTitle>Phonebook</PageHomeTitle>
+        <PageHomeTitle2>Add your first contact</PageHomeTitle2>
         {!isLoggedIn && (      
           
-          <PageHomeText> Please, <b>Sign up</b> or <b>Log in</b> to have access to the
-            Phonebook!</PageHomeText>
+          <PageHomeText> Please, <b>Sign up</b> or <b>Log in</b></PageHomeText>
       )}
       </PageHomeSection>
       

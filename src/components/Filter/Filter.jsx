@@ -12,8 +12,8 @@ const Filter = () => {
   }
     return (
         <Label htmlFor="" value={filterName}>
-            <TitleFilter>Find contacts by name</TitleFilter>
-            <Input type="text" onChange={onChangeFilter} placeholder="Enter search name" />
+            <TitleFilter>Search contact</TitleFilter>
+            <Input type="text" onChange={onChangeFilter} placeholder="Search" />
         </Label>
     );
 }

@@ -2,8 +2,7 @@ import styled from '@emotion/styled';
 
 export const PageRegistrationSection = styled.section`
   display: block;
-  min-width: 420px;
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 20px;
 
@@ -19,12 +18,14 @@ export const PageRegistrationTitle = styled.h2`
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
+  color: #7d3cff;
 `;
 
 export const PageRegistrationLabel = styled.label`
   display: flex;
   flex-direction: column;
   font-size: 16px;
+  color: #7d3cff;
 `;
 
 export const PageRegistrationInput = styled.input`
@@ -33,7 +34,8 @@ export const PageRegistrationInput = styled.input`
   margin: 8px 0 20px;
   display: inline-block;
   box-sizing: border-box;
-
+  border: 2px solid lightblue;
+  background-color: #f0f8ff;
   border-radius: 20px;
   cursor: pointer;
   font-size: 15px;
@@ -47,7 +49,9 @@ export const PageRegistrationBtn = styled.button`
   height: 100%;
   padding: 5px;
   border-radius: 20px;
-  color: #ffffff;
+  border: 2px solid lightblue;
+
+  color: #7d3cff;
   cursor: pointer;
   font-size: 15px;
 `;

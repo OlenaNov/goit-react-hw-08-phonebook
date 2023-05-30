@@ -14,7 +14,7 @@ export const MenuBox = styled.div`
 export const MenuTitle = styled.p`
   font-size: 16px;
   margin: 0;
-  color: #000000;
+  color: #7d3cff;
 `;
 
 export const MenuBtn = styled.button`
@@ -25,7 +25,8 @@ export const MenuBtn = styled.button`
   height: 100%;
   padding: 5px;
   border-radius: 5px;
-  color: #000000;
+  border: 2px solid lightblue;
+  color: #7d3cff;
   cursor: pointer;
   font-size: 15px;
 `;

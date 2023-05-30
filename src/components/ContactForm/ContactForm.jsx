@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Form, Label, Input, Button } from './ContactForm.styled';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import { nanoid } from 'nanoid'
 import { useFetchContactsQuery, useCreateContactMutation } from 'redux/contacts/contactsApi';
 import Loader from 'components/Loader';
@@ -31,9 +31,9 @@ function ContactForm  () {
     if (!isAdding) {
       createContact(data);
       reset();
-      toast.success(`😃 Contact, ${name} successfully added`);
+      alert(`😃 Contact, ${name} successfully added`);
     } else {
-      toast.error(`😏${data.name} is already in contacts.`);
+      alert(`😏${data.name} is already in contacts.`);
     }
   };
 

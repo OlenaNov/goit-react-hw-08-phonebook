@@ -23,7 +23,7 @@ function PageRegistration() {
 
   return (
     <PageRegistrationSection>
-      <PageRegistrationTitle>Please enter your registration details</PageRegistrationTitle>
+      <PageRegistrationTitle>Please register</PageRegistrationTitle>
       <form onSubmit={handleSubmit}>
         <PageRegistrationLabel>
           Name
@@ -32,7 +32,7 @@ function PageRegistration() {
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces."
-            placeholder="Example John"
+            placeholder="Name"
             required
             value={name}
             onChange={handleChange}
@@ -45,7 +45,7 @@ function PageRegistration() {
             name="email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             title="Enter your email"
-            placeholder="Example user@mail.com"
+            placeholder="user@mail.com"
             required
             value={email}
             onChange={handleChange}
@@ -62,7 +62,7 @@ function PageRegistration() {
           />
         </PageRegistrationLabel>
         <PageRegistrationBtn type="submit">
-          Register
+          Submit
         </PageRegistrationBtn>
       </form>
     </PageRegistrationSection>

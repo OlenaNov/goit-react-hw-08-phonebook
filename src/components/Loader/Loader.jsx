@@ -12,7 +12,7 @@ const Loader = () => {
         wrapperClass=""
         visible={true}
         ariaLabel='oval-loading'
-        secondaryColor="yellow"
+        secondaryColor="lightblue"
         strokeWidth={2}
         strokeWidthSecondary={2} />
     </LoaderContainer>

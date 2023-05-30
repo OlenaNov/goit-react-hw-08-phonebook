@@ -65,7 +65,7 @@ const App = () => {
               <Route path="*" element={<Navigate to="/" />} />              
             </Routes>
           </Suspense>
-          <ToastContainer autoClose={3700} position="top-center" />
+          <ToastContainer autoClose={2000} position="top-center" />
         </>
       )}
     </>
